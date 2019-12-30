@@ -1,6 +1,20 @@
 <?php
+/**
+ * Block of custom functions for the test task
+ *
+ * @author Alexey Vasilyev <asv2108@gmail.com>
+ * @since  1.1
+ */
 
-function get_intersection_data($arr1, $arr2)
+/**
+ * Get intersection data
+ *
+ * @param array $arr1
+ * @param array $arr2
+ *
+ * @return array
+ */
+function getIntersectionData($arr1, $arr2)
 {
     $res = [];
     foreach ($arr1 as $item) {
@@ -11,7 +25,14 @@ function get_intersection_data($arr1, $arr2)
     return $res;
 }
 
-function get_even($arr)
+/**
+ * Get even array cells
+ *
+ * @param array $arr
+ *
+ * @return array
+ */
+function getEven($arr)
 {
     $res = [];
     foreach ($arr as $item) {
@@ -19,10 +40,18 @@ function get_even($arr)
             $res[] = $item;
         }
     }
+
     return $res;
 }
 
-function get_recursive_array_sum($arr)
+/**
+ * Get total value from a nested array
+ *
+ * @param array $arr
+ *
+ * @return int|mixed
+ */
+function getRecursiveArraySum($arr)
 {
     //TODO use loop while? and need to know a depth of array
     $sum = 0;

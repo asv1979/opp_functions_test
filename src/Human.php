@@ -1,9 +1,15 @@
 <?php
+/**
+ * @author Alexey Vasilyev
+ * @since 1.1
+ */
+
+namespace App;
 
 /**
  * Class Human
  *
- * will use as a driver or a passenger in a vehicle
+ * @package App
  */
 class Human
 {
@@ -26,9 +32,9 @@ class Human
 
     /**
      * Human constructor.
+     *
      * @param int $weight
      * @param int $height
-     * @param string $role
      */
     public function __construct($weight = 60, $height = 170)
     {
@@ -37,9 +43,9 @@ class Human
     }
 
     /**
-     * @param $name
+     * @param string $name
      */
-    public function set_name($name)
+    public function setName($name)
     {
         $this->name = $name;
     }
@@ -47,15 +53,15 @@ class Human
     /**
      * @return string
      */
-    public function get_name()
+    public function getName()
     {
         return $this->name;
     }
 
     /**
-     * @param $role
+     * @param string $role
      */
-    public function set_role($role)
+    public function setRole($role)
     {
         $this->role = $role;
     }
@@ -63,7 +69,7 @@ class Human
     /**
      * @return string
      */
-    public function get_role()
+    public function getRole()
     {
         return $this->role;
     }
